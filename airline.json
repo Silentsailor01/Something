@@ -873,6 +873,13 @@
             ],
             "labels": [
                 "Texture"
+        },
+        "5316": {
+            "name": "McDonnell Douglas Md-88",
+            "liveries": [
+            ],
+            "labels": [
+                "Texture"
             ]
         }
     }
