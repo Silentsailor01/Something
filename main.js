@@ -1,5 +1,5 @@
-const githubRepo = 'https://raw.githubusercontent.com/kolos26/GEOFS-LiverySelector/main';
-let jsDelivr = 'https://cdn.jsdelivr.net/gh/kolos26/GEOFS-LiverySelector@main';
+const githubRepo = 'https://raw.githubusercontent.com/Silentsailor01/Something/main';
+let jsDelivr = 'https://cdn.jsdelivr.net/gh/Silentsailor01/Something@main';
 const noCommit = jsDelivr;
 const version = '3.3.1';
 
@@ -18,7 +18,7 @@ let mpAirlineobjs = {};
 (async function init() {
     // latest commit fetch
     try {
-        const res = await fetch(`https://api.github.com/repos/kolos26/GEOFS-LiverySelector/commits/main`);
+        const res = await fetch(`https://api.github.com/repos/Silentsailor01/Something/commits/main`);
         if (!res.ok) jsDelivr = githubRepo;
         const commit = (await res.json()).sha;
         if (!/^[a-f0-9]{40}$/.test(commit)) jsDelivr = githubRepo;
@@ -92,7 +92,7 @@ async function handleLiveryJson(data) {
     if (liveryobj.version != version) {
         document.querySelector('.livery-list h3').appendChild(
             createTag('a', {
-                href: 'https://github.com/kolos26/GEOFS-LiverySelector/releases/latest',
+                href: 'https://github.com/Silentsailor01/Something/releases/latest',
                 target: '_blank',
                 style: 'display:block;width:100%;text-decoration:none;text-align:center;'
             }, 'Update available: ' + liveryobj.version)
